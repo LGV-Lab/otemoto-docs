@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otemoto サポート — LGV Lab</title>
+  <meta name="description" content="iPad・iPhone 向け PC / Mac リモートビューア「Otemoto（おてもと）」の公式サポートページです。">
+  <style>
+    :root {
+      --bg: #f6f3fb;
+      --card: #ffffff;
+      --text: #231e30;
+      --muted: #5d5572;
+      --accent: #6c4ab6;
+      --accent-soft: #eee8fa;
+      --border: #e5ddf3;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #15111f;
+        --card: #1f1a2d;
+        --text: #f3effb;
+        --muted: #b8aecf;
+        --accent: #a78bfa;
+        --accent-soft: #2c2440;
+        --border: #332a4a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      background: linear-gradient(160deg, var(--bg) 0%, var(--accent-soft) 100%);
+      color: var(--text);
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 4px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      letter-spacing: 0.02em;
+    }
+    .lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--accent);
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+    nav a:hover {
+      background: var(--accent-soft);
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 24px rgba(45, 28, 86, 0.06);
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.25rem;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    h3 {
+      margin: 18px 0 6px;
+      font-size: 1.02rem;
+    }
+    p { margin: 0 0 12px; }
+    ul { margin: 0 0 12px; padding-left: 1.3em; }
+    li { margin-bottom: 6px; }
+    .notice {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin: 14px 0;
+      font-size: 0.95rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 11px 22px;
+      border-radius: 12px;
+      margin-top: 6px;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 40px;
+    }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">LGV Lab 公式サポート</div>
+      <h1>Otemoto（おてもと）</h1>
+      <p class="lead">iPad・iPhone から自宅の Mac / PC を手元で快適に操作するリモートビューア</p>
+      <nav>
+        <a href="#connection">接続方法</a>
+        <a href="#faq">よくある質問</a>
+        <a href="#contact">お問い合わせ</a>
+        <a href="./privacy.html">プライバシーポリシー</a>
+      </nav>
+    </header>
+
+    <section class="card" id="connection">
+      <h2>接続方法のご案内</h2>
+      <h3>1. 自宅など同じ Wi-Fi 内から接続する場合</h3>
+      <ul>
+        <li>Mac の「システム設定」›「一般」›「共有」から<strong>「画面共有」</strong>をオンにします。</li>
+        <li>Otemoto の「近くの端末」に表示された Mac を選ぶか、「＋」ボタンから IP アドレスを入力して接続します。</li>
+      </ul>
+
+      <h3>2. 外出先（モバイル回線・外部 Wi-Fi）から接続する場合</h3>
+      <div class="notice">
+        <strong>外出先から自宅の Mac・PC へ接続するには、Tailscale などの VPN サービス（個人利用無料）の併用が必要です。</strong><br>
+        Otemoto アプリ内のサイドバーにある「外出先接続（Tailscale）」に、初心者向けの4ステップガイドを収録しています。Otemoto 内でのアカウント登録やログインは不要です。
+      </div>
+    </section>
+
+    <section class="card" id="faq">
+      <h2>よくある質問（FAQ）</h2>
+
+      <h3>Q. 料金体系はどうなっていますか？</h3>
+      <p>
+        接続確認用として<strong>1セッション 10分まで無料（回数制限なし）</strong>でお試しいただけます。
+        継続して使いたい場合は、アプリ内課金<strong>「フルバージョン解放（¥500・買い切り）」</strong>をご購入いただくことで時間制限が永久に解除されます。月額・年額のサブスクリプションではありません。
+      </p>
+
+      <h3>Q. 機種変更や再インストール後に購入を復元できますか？</h3>
+      <p>
+        はい。購入時と同じ Apple Account でサインインした状態で、アプリ内の「設定」または購入画面にある<strong>「購入を復元」</strong>をタップしてください。
+      </p>
+
+      <h3>Q. ファイルブラウザ（外付けドライブ閲覧など）を使うには？</h3>
+      <p>
+        Mac の「システム設定」›「一般」›「共有」から<strong>「リモートログイン（SSH）」</strong>をオンにしてください。詳細画面（ⓘ）に表示されるログイン名（ユーザー名）を Otemoto のファイルブラウザに入力すると利用できます。
+      </p>
+
+      <h3>Q. Windows や Linux にも接続できますか？</h3>
+      <p>
+        はい。標準的な VNC サーバー（TightVNC / TigerVNC / RealVNC 等）が動作している Windows・Linux・Raspberry Pi に接続できます。
+      </p>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>お問い合わせ・不具合報告</h2>
+      <p>
+        使い方がわからない場合や不具合・ご要望がありましたら、以下のサポート受付ページ（GitHub Issues）よりお気軽にご連絡ください。
+      </p>
+      <a class="btn" href="https://github.com/LGV-Lab/otemoto-docs/issues" target="_blank" rel="noopener">
+        サポートへ問い合わせる（GitHub Issues）
+      </a>
+    </section>
+
+    <footer>
+      <p>
+        <a href="./privacy.html">プライバシーポリシー</a> ・ © 2026 LGV Lab
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
